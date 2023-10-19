@@ -1,4 +1,4 @@
-/* Header.js */
+/* Nav.js */
 import React from 'react';
 
 const Header = () => {
@@ -10,4 +10,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Nav;
