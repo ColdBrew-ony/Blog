@@ -1,7 +1,7 @@
 /* Nav.js */
 import React from 'react';
 
-const Header = () => {
+const Nav = () => {
   return (
     <header>
       헤더입니다.
