@@ -1,7 +1,7 @@
-/* Nav.js */
+/* Header.js */
 import React from 'react';
 
-const Nav = () => {
+const Header = () => {
   return (
     <header>
       헤더입니다.
@@ -10,4 +10,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Header;
