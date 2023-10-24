@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "contents";
+    src: url("./Contents-PureunJeonnam.ttf");
+  }
+
+@font-face {
+  font-family: "default";
+  src: url("./Default-NanumSquare.ttf");
+}
+
+@font-face {
+    font-family: "empasize";
+    src: url("./Emphasize-Recipekorea.ttf");
+}
+
+@font-face {
+    font-family: "title";
+    src: url("./Tilte-CookieRun.ttf");
+}

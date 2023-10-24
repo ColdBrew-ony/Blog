@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
-import Footer from './footer'
+import Footer from './Footer'
 import Header from './Header'
-import Leftside from './leftside'
-import Body from './body'
+import Leftside from './Leftside'
+import Body from './Body'
 import { Grid, GridItem } from '@chakra-ui/react'
 
 const Layout = ({children}) => (
@@ -19,7 +18,7 @@ const Layout = ({children}) => (
                 color='blackAlpha.700'
                 fontWeight='bold'
             >
-                <GridItem pl='2' bg='orange.300' area={'header'}>
+                <GridItem area={'header'}>
                     <Header />
                 </GridItem>
                 <GridItem pl='2' bg='pink.300' area={'nav'}>
@@ -28,7 +27,7 @@ const Layout = ({children}) => (
                 <GridItem pl='2' bg='green.300' area={'main'}>
                     <Body> {children} </Body>
                 </GridItem>
-                <GridItem pl='2' bg='blue.300' area={'footer'}>
+                <GridItem area={'footer'}>
                     <Footer />
                 </GridItem>
             </Grid>
