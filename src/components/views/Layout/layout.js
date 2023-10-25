@@ -8,7 +8,7 @@ const Layout = ({children}) => (
 
         <div>
             <Grid
-                templateAreas={`"header header"
+                templateAreas={`"nav header"
                                 "nav main"
                                 "nav footer"`}
                 gridTemplateRows={'50px 1fr 30px'}
@@ -21,7 +21,7 @@ const Layout = ({children}) => (
                 <GridItem area={'header'}>
                     <Header />
                 </GridItem>
-                <GridItem pl='2' bg='pink.300' area={'nav'}>
+                <GridItem area={'nav'}>
                     <Leftside/>
                 </GridItem>
                 <GridItem pl='2' bg='green.300' area={'main'}>
