@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Blog/static/css/main.9c97392a.css",
-    "main.js": "/Blog/static/js/main.2c2cb72f.js",
+    "main.js": "/Blog/static/js/main.0cf667b4.js",
     "static/media/Contents-PureunJeonnam.ttf": "/Blog/static/media/Contents-PureunJeonnam.526c3b99fc1f0afd3632.ttf",
     "static/media/Tilte-CookieRun.ttf": "/Blog/static/media/Tilte-CookieRun.52560075f5d887966bf2.ttf",
     "static/media/Emphasize-Recipekorea.ttf": "/Blog/static/media/Emphasize-Recipekorea.7c8b6d145e70b92f4010.ttf",
     "static/media/Default-NanumSquare.ttf": "/Blog/static/media/Default-NanumSquare.6299d42abaf5726d8c89.ttf",
     "index.html": "/Blog/index.html",
     "main.9c97392a.css.map": "/Blog/static/css/main.9c97392a.css.map",
-    "main.2c2cb72f.js.map": "/Blog/static/js/main.2c2cb72f.js.map"
+    "main.0cf667b4.js.map": "/Blog/static/js/main.0cf667b4.js.map"
   },
   "entrypoints": [
     "static/css/main.9c97392a.css",
-    "static/js/main.2c2cb72f.js"
+    "static/js/main.0cf667b4.js"
   ]
 }
