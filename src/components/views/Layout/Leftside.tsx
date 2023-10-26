@@ -22,8 +22,9 @@ import {
 } from 'react-icons/fi'
 import { ReactNode } from 'react'
 import { IconType } from 'react-icons'
-import { AiFillMail, AiFillGithub } from "react-icons/ai"
+import { AiFillMail, AiFillGithub, AiFillTag, AiOutlineComment } from "react-icons/ai"
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { FaRegAddressCard, FaRegEdit } from 'react-icons/fa'
 
 interface LinkItemProps {
   name: string
@@ -40,10 +41,10 @@ interface SidebarProps extends BoxProps {
 
 const LinkItems: Array<LinkItemProps> = [
   { name: 'Home', icon: FiHome },
-  { name: 'Trending', icon: FiTrendingUp },
-  { name: 'Explore', icon: FiCompass },
-  { name: 'Favourites', icon: FiStar },
-  { name: 'Settings', icon: FiSettings },
+  { name: 'About', icon: FaRegAddressCard },
+  { name: 'Posts', icon: FaRegEdit },
+  { name: 'Tags', icon: AiFillTag },
+  { name: 'Comments', icon: AiOutlineComment },
 ]
 //GitHub Email 주소
 const openSite = (open : string) => {
@@ -96,45 +97,49 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       pos="fixed"
       h="full"
       {...rest}>
-      <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-          Logo
-        </Text>
         
-      </Flex>
-      <Box
-          bg={useColorModeValue('white', 'gray.900')}
-          color={useColorModeValue('gray.700', 'gray.200')}>
-          <Container
-            as={Stack}
-            maxW={'9xl'}
-            py={4}
-            direction={{ base: 'column', md: 'row' }}
-            spacing={5}
-            justify={{ base: 'center', md: 'center' }}
-            align={{ base: 'center', md: 'center' }}>
-            
-            
-            <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'GitHub'} open={'github'}>
-              <AiFillGithub />
-            </SocialButton>
-            <SocialButton label={'E-Mail'} open={'email'}>
-              <AiFillMail />
-            </SocialButton>
-            {/* 추후 다크모드 변경 */}
-            <Button w={8} h={8} bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')} rounded={'full'} onClick={toggleColorMode}>
-              {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-            </Button>
-            </Stack>
-          </Container>
-        </Box>
-        <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
-      {LinkItems.map((link) => (
-        <NavItem key={link.name} icon={link.icon}>
-          {link.name}
-        </NavItem>
-      ))}
+          <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
+            <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
+              Logo
+            </Text>
+          </Flex>
+
+          <Box
+              bg={useColorModeValue('white', 'gray.900')}
+              color={useColorModeValue('gray.700', 'gray.200')}>
+              <Container
+                as={Stack}
+                maxW={'9xl'}
+                py={4}
+                direction={{ base: 'column', md: 'row' }}
+                spacing={5}
+                justify={{ base: 'center', md: 'center' }}
+                align={{ base: 'center', md: 'center' }}>
+                
+                
+                <Stack direction={'row'} spacing={6}>
+                <SocialButton label={'GitHub'} open={'github'}>
+                  <AiFillGithub />
+                </SocialButton>
+                <SocialButton label={'E-Mail'} open={'email'}>
+                  <AiFillMail />
+                </SocialButton>
+                {/* 추후 다크모드 변경 */}
+                <Button w={8} h={8} bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')} rounded={'full'} onClick={toggleColorMode}>
+                  {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                </Button>
+                </Stack>
+              </Container>
+            </Box>
+            <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
+
+          {LinkItems.map((link) => (
+            <NavItem key={link.name} icon={link.icon}
+            >
+              {link.name}
+            </NavItem>
+          ))}
+
     </Box>
   )
 }
