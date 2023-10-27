@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 
-import Layout from "./components/views/Layout/Layout";
+import Layout from "./components/views/Layout/MainLayout";
 import AboutPage from "./components/views/About/About";
 import ProgrammingPage from "./components/views/Programming/Programming";
 import { ChakraProvider } from '@chakra-ui/react'

@@ -4,7 +4,7 @@ import Leftside from './Leftside'
 import Body from './Body'
 import { Grid, GridItem } from '@chakra-ui/react'
 
-const Layout = ({children}) => (
+const MainLayout = ({children}) => (
 
         <div>
             <Grid
@@ -32,8 +32,6 @@ const Layout = ({children}) => (
                 </GridItem>
             </Grid>
         </div>
-        
-        
     );
 
-export default Layout
+export default MainLayout

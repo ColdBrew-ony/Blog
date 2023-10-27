@@ -76,7 +76,7 @@ export default function Header( props: Props) {
     };
   return (
     <>
-    <Flex h={16} alignItems={'center'} justifyContent={'end'}>
+    <Flex h={16} alignItems={'center'} justifyContent={'end'} position={'fixed'}>
       <Stack spacing={4} direction="row" align="end" m="1rem">
         <SearchBar />
       </Stack>
