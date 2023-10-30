@@ -14,13 +14,13 @@ export default function Footer() {
       <Container
         as={Stack}
         maxW={'6xl'}
-        py={4}
+        py={3}
         direction={{ base: 'column', md: 'row' }}
         spacing={4}
         justify={{ base: 'center', md: 'center' }}
         align={{ base: 'center', md: 'center' }}
         fontFamily={'default'}
-        fontSize={'110%'}>
+        fontSize={'70%'}>
         <Text>© 2023 ColdBre W oony. All rights reserved</Text>
       </Container>
     </Box>

@@ -11,9 +11,9 @@ const MainLayout = ({children}) => (
                 templateAreas={`"nav header"
                                 "nav main"
                                 "nav footer"`}
-                gridTemplateRows={'50px 1fr 30px'}
-                gridTemplateColumns={'150px 1fr'}
-                h='200px%'
+                gridTemplateRows={'0.07fr 1fr 1px'}
+                gridTemplateColumns={'0.5fr 3fr'}
+                h='full'
                 gap='1'
                 color='blackAlpha.700'
                 fontWeight='bold'
@@ -24,7 +24,7 @@ const MainLayout = ({children}) => (
                 <GridItem area={'nav'}>
                     <Leftside/>
                 </GridItem>
-                <GridItem pl='2' bg='green.300' area={'main'}>
+                <GridItem bg='green.300' area={'main'}>
                     <Body> {children} </Body>
                 </GridItem>
                 <GridItem area={'footer'}>
