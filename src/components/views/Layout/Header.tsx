@@ -9,10 +9,8 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
-import React, { useState } from 'react';
-import {    Spinner, Box, Icon, BoxProps, InputRightElement,  Text } from '@chakra-ui/react';
-import { FaSearch } from 'react-icons/fa';
-import { css } from "@emotion/react";
+import {  BoxProps} from '@chakra-ui/react';
+
 
 interface Props extends BoxProps {
 	value: string;
@@ -53,28 +51,9 @@ export const SearchBar = () => {
 
 export default function Header( props: Props) {
     const {
-      value,
-      isLoading,
-      input,
-      onSearchChange,
-      resultRenderer,
-      onResultSelect,
-      resultListMaxHeight = '60vh',
-      placeholder = '',
-      searchResults = [],
-      noResultFoundText = 'No results found.',
-      ...rest
+
     } = props;
 
-    const { iconPosition = 'left' } = input || {};
-
-    const [ showResults, setShowResults ] = useState( false );
-
-    const onBlur = () => {
-      setTimeout( () => {
-        setShowResults( false );
-      }, 170 );
-    };
 
 	// const headerStyle = () => css`
 	// height: 50px;
@@ -86,7 +65,7 @@ export default function Header( props: Props) {
 	// z-index:10;
 	// `;
   return (
-		<Flex h={16} alignItems={'center'} justifyContent={'center'} position={'fixed'} display={"flex"} zIndex={"10"}>
+		<Flex h={16} alignItems={'center'} justifyContent={'center'} position={'fixed'} display={"flex"} zIndex={"10"} >
 			<Stack spacing={4} direction="row" align="end" m="1rem">
 				<SearchBar />
 			</Stack>

@@ -2,7 +2,7 @@ import Footer from './Footer'
 import Header from './Header'
 import Leftside from './Leftside'
 import Body from './Body'
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Grid, GridItem, position } from '@chakra-ui/react'
 
 const MainLayout = ({children}) => (
 
