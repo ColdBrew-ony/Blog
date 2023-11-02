@@ -18,7 +18,8 @@ const MainLayout = ({children}) => (
                 color='blackAlpha.700'
                 fontWeight='bold'
             >
-                <GridItem area={'header'}>
+                {/* <GridItem area={'header'} position={'fixed'} right={'0'} left={'0'} justifyContent={'end'} alignItems={'end'}> */}
+                <GridItem area={'header'} width={'100%'} position={'fixed'} left={'0'} right={'0'} paddingLeft={'80%'}>
                     <Header />
                 </GridItem>
                 <GridItem area={'nav'}>
